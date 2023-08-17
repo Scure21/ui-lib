@@ -1,0 +1,83 @@
+.modalContent {
+    background-color: var(--eggshell);
+    margin: 0 1rem;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 95%;
+    min-height: 31.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .modalContent img {
+    margin-bottom: 0.75rem;
+  }
+  
+  .closeButton {
+    color: var(--black);
+    float: right;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+  
+  .modalTextContainer {
+    width: 100%;
+    max-width: 22.5rem;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-top: 3rem;
+  }
+  
+  .actionButton {
+    background-color: transparent;
+    border: 1px solid var(--almost-black);
+    border-radius: 5px;
+    padding: 12px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+  }
+  
+  .actionButton:hover {
+    background-color: rgba(128, 128, 128, 0.1);
+  }
+  
+  .actionButton:first-child {
+    background-color: var(--almost-black);
+    color: var(--white);
+  }
+  
+  .actionButton:first-child:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  @media screen and (min-width: 700px) {
+    .modalContent {
+      max-width: 50rem;
+    }
+  }
+  
